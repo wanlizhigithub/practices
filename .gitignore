@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+
+*.opensdf
+*.v12
+*.sdf
+Debug
+ipch
