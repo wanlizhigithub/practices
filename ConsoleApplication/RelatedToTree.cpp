@@ -123,3 +123,33 @@ void RelatedToTree::morris_inorderTraversal(TreeNode* root)
 		}
 	}
 }
+
+void RelatedToTree::populateNextRightPointer(TreeLinkNode* root)
+{
+	if (root == nullptr)
+	{
+		return;
+	}
+
+	TreeLinkNode dummy(-1); // 下一层的前节点，使得循环不需要过多判断
+
+	// 处理同一层的节点，目的是使下一层连接好
+	for (auto current = root, prev = &dummy;
+		current != nullptr; current=current->next)
+	{
+		if (current->left != nullptr)
+		{
+			prev->next = current->left;
+			prev = prev->next;
+		}
+
+		if (current->right != nullptr)
+		{
+			prev->next = current->right;
+			prev = prev->next;
+		}
+	}
+	
+	// 处理下一层！
+	populateNextRightPointer(dummy.next);
+}
