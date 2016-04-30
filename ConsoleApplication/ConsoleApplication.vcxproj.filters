@@ -33,6 +33,9 @@
     <ClInclude Include="TreeLinkNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LetterCombinationOfAPhone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -42,6 +45,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RelatedToTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LetterCombinationOfAPhone.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

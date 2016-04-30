@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "TreeNode.h"
 #include "RelatedToTree.h"
+#include "LetterCombinationOfAPhone.h"
 #include <iostream>
 using namespace std;
 
@@ -50,7 +51,7 @@ void morris_inorder_basic()
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	morris_inorder_basic();
+	LetterCombinationOfAPhone().test();
 	system("pause");
 	return 0;
 }
